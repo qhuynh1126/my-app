@@ -1,70 +1,56 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Yarn
 
-## Available Scripts
+From within the folder that contains the `package.json` file.
 
-In the project directory, you can run:
+```bash
+yarn add
+```
 
-### `yarn start`
+Then you execute:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+yarn start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### bootstrap
 
-### `yarn test`
+- https://getbootstrap.com/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This module provide the HTML/CSS and JS Framework that drive the foundational aspects of the UI.
 
-### `yarn build`
+##### reactstrap
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This is a React wrapper for Boostrap. It is optional to use this and we recommend you use bootstrap directly when possible.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### axios
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This library is used to make Ajax requests to a server.
 
-### `yarn eject`
+##### react-router
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The module we use to make client side routing possible
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##### toastr
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- https://github.com/CodeSeven/toastr
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This is to be used to provide informational messages to the user. For example in the following situations:
 
-## Learn More
+- "You have logged in successfully"
+- "You have created a record"
+- "You have uploaded a file"
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+##### rc-pagination
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- https://github.com/react-component/pagination
 
-### Code Splitting
+This tool provide for you a ready to use component to draw a pagination tool to use to navigation from page to page, go "next" and "previous"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+##### what can be worked on 
 
-### Analyzing the Bundle Size
+- Completing using axios library to make HTTP request (AJAX request) to render a list of games
+- Using Postman to create HTTP requests to test requests to the web api endpoints (need URL route pattern)
+- API url needed
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
