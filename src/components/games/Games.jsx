@@ -90,9 +90,9 @@ const Games = () => {
       .catch(onGetGamesError);
   }, []);
 
-  const onGetGamesSuccess = (data) => {
-    console.log(data);
-    let arrayOfGame = data.item.pagedItems;
+  const onGetGamesSuccess = (response) => {
+    console.log(response);
+    let arrayOfGame = response.data;
     console.log({ arrayOfGame });
 
     setGameData((prevState) => {
