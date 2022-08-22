@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Games from "./components/games/Games";
 import GameForm from "./components/games/GameForm";
 import React from 'react';
+import Home from "./components/users/Home";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          <Route path="/Home" element={<Home/>}/>
           <Route path="/Games" element={<Games/>}/>
           <Route path="/Games/GameForm" element={<GameForm/>} />
         </Routes>

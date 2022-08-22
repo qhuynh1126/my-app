@@ -33,23 +33,20 @@ const addGame = (payload) => {
   const deleteGame = () => {
     const config = {
       method: "GET",
-      url: endpoint,
+      url: "https://my-game-api-project.herokuapp.com/games?pageIndex=0&pageSize=10",
       withCredentials: true,
       crossdomain: true,
       headers: { "Content-Type": "application/json" },
     };
-  
-    console.log("in the middle");
+
     return axios(config);
   };
   
 
-const searchGame = (pageIndex, pageSize, query) => {
+const searchGame = () => {
   const config = {
     method: "GET",
-    url:
-      endpoint +
-      `search?pageIndex=${pageIndex}&pageSize=${pageSize}&query=${query}`,
+    url: "https://my-game-api-project.herokuapp.com/games?pageIndex=0&pageSize=10",
     withCredentials: true,
     crossdomain: true,
     headers: { "Content-Type": "application/json" },
@@ -59,10 +56,10 @@ const searchGame = (pageIndex, pageSize, query) => {
   return axios(config);
 };
 
-const paginateGame = (pageIndex, pageSize) => {
+const paginateGame = () => {
   const config = {
     method: "GET",
-    url: endpoint + `paginate/?pageIndex=${pageIndex}&pageSize=${pageSize}`,
+    url: 'https://my-game-api-project.herokuapp.com/games?pageIndex=0&pageSize=10',
     withCredentials: true,
     crossdomain: true,
     headers: { "Content-Type": "application/json" },

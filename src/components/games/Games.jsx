@@ -4,7 +4,7 @@ import "rc-pagination/assets/index.css";
 import locale from "rc-pagination/lib/locale/en_US";
 import Pagination from "rc-pagination";
 import * as gamesService from '../../services/gamesService';
-import Game from "./gameCard";
+import Game from "../games/gameCard";
 
 
 const Games = () => {
@@ -31,9 +31,9 @@ const Games = () => {
   };
 
   const onDeleteRequested = useCallback((myGame, eObj) => {
-    console.log(myGame.name, { myGame: myGame, eObj });
+    console.log(myGame.name, { myGame, eObj });
 
-    const handler = getDeleteSuccessHandler(myGame.id);
+    const handler = getDeleteSuccessHandler(myGame.name);
 
     gamesService.deleteGame(myGame.name).then(handler).catch(onDeleteError);
   }, []);
@@ -88,7 +88,7 @@ const Games = () => {
       .paginateGame(currentPage, gameData.pageSize)
       .then(onGetGamesSuccess)
       .catch(onGetGamesError);
-  });
+  }, []);
 
   const onGetGamesSuccess = (data) => {
     console.log(data);
