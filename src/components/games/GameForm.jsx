@@ -166,7 +166,7 @@ function GameForm() {
                   type="button"
                   className="btn btn-primary"
                   onClick={onAddGameClicked}
-                ></button>
+                >Add Game</button>
               </div>
             </form>
           </div>
