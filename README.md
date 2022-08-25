@@ -18,17 +18,13 @@ yarn start
 
 This module provide the HTML/CSS and JS Framework that drive the foundational aspects of the UI.
 
-##### reactstrap
-
-This is a React wrapper for Boostrap. It is optional to use this and we recommend you use bootstrap directly when possible.
-
 ##### axios
 
 This library is used to make Ajax requests to a server.
 
 ##### react-router
 
-The module we use to make client side routing possible
+The module make client side routing possible
 
 ##### toastr
 
@@ -44,7 +40,7 @@ This is to be used to provide informational messages to the user. For example in
 
 - https://github.com/react-component/pagination
 
-This tool provide for you a ready to use component to draw a pagination tool to use to navigation from page to page, go "next" and "previous"
+This tool provide a ready to use component to draw a pagination tool to use to navigation from page to page, go "next" and "previous"
 
 ##### what can be worked on 
 
