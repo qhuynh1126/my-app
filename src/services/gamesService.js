@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let endpoint = "https://my-game-api-project.herokuapp.com/games";
+let endpoint = "http://localhost:3000/games";
 
 
 const getGames = () => {
@@ -32,7 +32,7 @@ const addGame = (payload) => {
   const deleteGame = () => {
     const config = {
       method: "GET",
-      url: "https://my-game-api-project.herokuapp.com/games?pageIndex=0&pageSize=10",
+      url: "http://localhost:3000/games?pageIndex=0&pageSize=10",
       withCredentials: true,
       crossdomain: true,
       headers: { "Content-Type": "application/json" },
@@ -45,7 +45,7 @@ const addGame = (payload) => {
 const searchGame = () => {
   const config = {
     method: "GET",
-    url: "https://my-game-api-project.herokuapp.com/games?pageIndex=0&pageSize=10",
+    url: "http://localhost:3000/games?pageIndex=0&pageSize=10",
     withCredentials: true,
     crossdomain: true,
     headers: { "Content-Type": "application/json" },
@@ -58,7 +58,7 @@ const searchGame = () => {
 const paginateGame = () => {
   const config = {
     method: "GET",
-    url: 'https://my-game-api-project.herokuapp.com/games?pageIndex=0&pageSize=10',
+    url: 'http://localhost:3000/games?pageIndex=0&pageSize=10',
     withCredentials: true,
     crossdomain: true,
     headers: { "Content-Type": "application/json" },
