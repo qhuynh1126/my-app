@@ -1,5 +1,4 @@
 import axios from "axios";
-import * as helper from "./serviceHelper";
 
 let endpoint = "https://my-game-api-project.herokuapp.com/games";
 
@@ -12,7 +11,7 @@ const getGames = () => {
     crossdomain: true,
     headers: { "Content Type": "application/json" },
   };
-  return axios(config).then(helper.onGlobalSuccess);
+  return axios(config);
 };
 
 const addGame = (payload) => {
